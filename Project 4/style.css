@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html, body{
+    line-height: 1.4;
+}
+.section1{
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text_container{
+    color:white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-left: 46px;
+}
+h1, h2{
+    font-weight: normal;;
+}
+.big{
+    font-size: 42px;
+    
+}
+.section2{
+    background-color: #000;
+    padding: 20px;
+}
+.text_container2{
+    color: white;
+    text-align: center;
+}
+.extra_big{
+    font-size: 70px;
+}
+
+.section3{
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.grid_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 320px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: .3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+}
+.card_content{
+    padding: 20px;
+}
+.text{
+    margin-top: 10px;
+}
+.section4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    background-color: greenyellow;
+}
+.about{
+    background-color: blueviolet;
+}
+
+.contact, .about{
+    padding: 30px;
+    min-height: 200px;
+}
+
+.about p, .contact p{
+    margin-bottom: 10px;
+}
+.contact h4{
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+
+.section5{
+    min-height: 100px;
+    background-color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_container3 h3{
+    font-size: 30px;
+    color:white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width:700px){
+    .section1{
+        max-height: 50vh;
+    }
+    .text_container{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .text_container h2{
+        font-size: 18px;
+    }
+    .big{
+        font-size: 30px;
+    }
+    .extra_big{
+        font-size: 45px;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    .text_container3 h3{
+        font-size: 20px;
+    }
+}
